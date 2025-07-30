@@ -1,0 +1,53 @@
+#root {
+  max-width: 1200px; /* Slightly narrower max-width for better readability */
+  margin: 0 auto; /* Center the content */
+  padding: 3rem 1.5rem; /* More vertical padding, consistent horizontal padding */
+  text-align: center;
+}
+
+.container {
+  padding: 30px; /* Increased padding for content inside containers */
+  background-color: rgba(255, 255, 255, 0.95); /* Less transparent white background */
+  border-radius: 0.75rem; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow for containers */
+  margin-bottom: 2rem; /* Add space below containers */
+}
+
+.card {
+  margin-bottom: 1.5rem; /* Consistent spacing between cards */
+  border: 1px solid #e0e0e0; /* Light border for definition */
+  border-radius: 0.5rem; /* Rounded corners for cards */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Refined shadow for cards */
+  background-color: #ffffff; /* Solid white background for cards */
+  padding: 1.25rem; /* Padding inside cards */
+}
+
+.card-body {
+  padding: 2rem; /* Increased padding inside card body */
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* Space below labels */
+  display: block; /* Ensure labels take full width */
+  text-align: left; /* Align labels to the left */
+}
+
+.form-control {
+  padding: 0.75rem 1rem; /* More padding for input fields */
+  border-radius: 0.375rem; /* Rounded corners for input fields */
+  border: 1px solid #ced4da;
+  width: 100%; /* Ensure input fields take full width */
+  margin-bottom: 1rem; /* Space below input fields */
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn {
+  width: auto; /* Allow buttons to size naturally */
+  margin-top: 1rem; /* Space above buttons */
+}
