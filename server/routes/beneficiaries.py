@@ -17,7 +17,7 @@ def handle_beneficiaries():
             new_beneficiary = Beneficiary(name=data['name'], organization_id=data['organization_id'])
             db.session.add(new_beneficiary)
             db.session.commit()
-            return jsonify({'message': 'New beneficiary created!'}), 201
+            return jsonify({'message': 'New beneficiary created'}), 201
         except Exception as e:
             db.session.rollback()
             return jsonify({'error': str(e)}), 500
