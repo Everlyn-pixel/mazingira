@@ -11,6 +11,10 @@ from routes.organizations import organizations as organizations_blueprint
 from routes.donations import donations as donations_blueprint
 from routes.stories import stories as stories_blueprint
 from routes.beneficiaries import beneficiaries as beneficiaries_blueprint
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
 
 app = create_app()
 app.register_blueprint(main_blueprint)
