@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: '/api' });
+// Use environment variable for API base URL, fallback to '/api' for local development
+const API = axios.create({
+  baseURL: process.env.REACT_APP_API_URL || '/api',
+});
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
