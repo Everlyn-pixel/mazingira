@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// Use environment variable for API base URL, fallback to '/api' for local development
+// Hardcoded backend API base URL for production testing
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || '/api',
+  baseURL: 'https://mazingira-1.onrender.com/api',
 });
 
 API.interceptors.request.use((req) => {
