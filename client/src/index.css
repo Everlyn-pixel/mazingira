@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #1e5a59;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Primary Call-To-Action Buttons */
+.cta-buttons {
+    margin-bottom: 40px;
+}
+
+.cta-buttons button {
+    background-color: #1e5a59;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons button:hover {
+    background-color: #3a8d89;
+}
+
+/* Feature Boxes */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 30%;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.feature-box h3 {
+    color: #1e5a59;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.feature-box button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feature-box .donor-btn {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.feature-box .org-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.feature-box .admin-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+.feature-box button:hover {
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons button {
+        display: block;
+        margin: 10px auto;
+    }
+}

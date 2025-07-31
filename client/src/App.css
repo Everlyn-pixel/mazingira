@@ -1,0 +1,70 @@
+/* Keep #root clean, layout is handled in index.css and App.jsx */
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  background-color: #f4f6f8; /* Light background for contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #343a40;
+}
+
+/* Card Styles */
+.card {
+  margin-bottom: 2rem;
+  border: 1px solid #dee2e6;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f1f3f5;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  color: #212529;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Form Styles */
+.form-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #495057;
+}
+
+.form-control {
+  padding: 0.875rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-control:focus {
+  border-color: #20c997;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(32, 201, 151, 0.25);
+}
