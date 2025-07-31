@@ -14,10 +14,16 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await API.post('/auth/register', formData);
-      dispatch(login(data));
+      const response = await API.post('/auth/register', formData);
+      const data = response && response.data;
+      if (data && data.type) {
+        dispatch(login(data));
+      } else {
+        // Optionally, show an error to the user here
+        console.error('Registration failed: Invalid response from server.', data);
+      }
     } catch (error) {
-      console.error(error);
+      console.error('Registration error:', error);
     }
   };
 
