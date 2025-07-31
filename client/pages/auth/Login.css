@@ -1,0 +1,83 @@
+/* General container for the login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f0f2f5; /* Light gray background */
+  padding: 1rem;
+}
+
+/* The card that holds the login form */
+.login-card {
+  width: 100%;
+  max-width: 450px; /* Max width for larger screens */
+  padding: 2rem;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  background-color: #ffffff;
+}
+
+/* Card header with the title */
+.login-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-header h4 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #333;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Style for form labels */
+.form-label {
+  font-weight: 600;
+  color: #555;
+}
+
+/* Style for form inputs */
+.form-control {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+  border-color: #20c997; /* Highlight color */
+  box-shadow: 0 0 0 3px rgba(32, 201, 151, 0.2);
+}
+
+/* Login button styling */
+.btn-login {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #20c997; /* Primary button color */
+  color: #fff;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-login:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.btn-login:hover:not(:disabled) {
+  background-color: #17a278; /* Darker shade on hover */
+}
+
+/* Error message styling */
+.alert-danger {
+  border-radius: 8px;
+}
