@@ -5,7 +5,7 @@ from models.donation import Donation # Import Donation model for relationships
 from models.user import User # Import User model for relationships
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
-organizations = Blueprint('organizations', __name__, url_prefix='/organizations')
+organizations = Blueprint('organizations', __name__)
 
 @organizations.route('/', methods=['GET', 'POST'])
 @jwt_required()

@@ -3,7 +3,7 @@ from extensions import db
 from models.story import Story
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
-stories = Blueprint('stories', __name__, url_prefix='/stories')
+stories = Blueprint('stories', __name__)
 
 @stories.route('/', methods=['GET', 'POST'])
 @jwt_required()

@@ -4,7 +4,7 @@ from extensions import db
 from models.user import User
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 
-auth = Blueprint('auth', __name__, url_prefix='/auth')
+auth = Blueprint('auth', __name__)
 
 @auth.route('/register', methods=['POST'])
 def register():

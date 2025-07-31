@@ -3,7 +3,7 @@ from extensions import db
 from models.beneficiary import Beneficiary
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
-beneficiaries = Blueprint('beneficiaries', __name__, url_prefix='/beneficiaries')
+beneficiaries = Blueprint('beneficiaries', __name__)
 
 @beneficiaries.route('/', methods=['GET', 'POST'])
 @jwt_required()
