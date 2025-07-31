@@ -1,87 +1,118 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-:root {
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 16px; /* Base font size */
-
-  color-scheme: light dark;
-  color: #333; /* Darker text for better readability on light backgrounds */
-  background-color: #f0f2f5; /* Light gray background for overall app */
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #007bff; /* Bootstrap primary blue */
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-a:hover {
-  color: #0056b3; /* Darker blue on hover */
-}
-
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column; /* Allow content to stack vertically */
-  min-width: 320px;
-  min-height: 100vh;
-  background: linear-gradient(to bottom right, #e0f2f1, #bbdefb); /* Light green-blue gradient */
-  background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #2c3e50; /* Darker heading color */
-  margin-top: 1.5em;
-  margin-bottom: 0.8em;
-  line-height: 1.2;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 h1 {
-  font-size: 2.8em; /* Slightly smaller for better balance */
+    color: #1e5a59;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-button {
-  border-radius: 0.375rem; /* More rounded corners */
-  border: 1px solid transparent;
-  padding: 0.75em 1.5em; /* More padding for a larger touch target */
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #28a745; /* Bootstrap success green */
-  color: white; /* White text for buttons */
-  cursor: pointer;
-  transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
-}
-button:hover {
-  background-color: #218838; /* Darker green on hover */
-  border-color: #1e7e34;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-  outline-color: #28a745; /* Focus outline matches button color */
+p.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.6;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
+/* Primary Call-To-Action Buttons */
+.cta-buttons {
+    margin-bottom: 40px;
+}
+
+.cta-buttons button {
+    background-color: #1e5a59;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons button:hover {
+    background-color: #3a8d89;
+}
+
+/* Feature Boxes */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-box {
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 30%;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.feature-box h3 {
+    color: #1e5a59;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.feature-box button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feature-box .donor-btn {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.feature-box .org-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.feature-box .admin-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+.feature-box button:hover {
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons button {
+        display: block;
+        margin: 10px auto;
+    }
 }
