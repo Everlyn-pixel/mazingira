@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://mazingira-1.onrender.com'});
+const API = axios.create({ baseURL: 'https://mazingira-jfiv-r9fjikz27-mazingira.vercel.app/api' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
