@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://mazingira-1.onrender.com/api/:path*"
+    },
+    {
+      "source": "/((?!api/|_next/|assets/|favicon.ico).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
